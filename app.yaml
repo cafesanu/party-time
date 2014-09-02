@@ -1,0 +1,17 @@
+application: the-party-time
+version: 1
+runtime: php
+api_version: 1
+
+handlers:
+- url: /images
+  static_dir: images
+
+- url: /stylesheets
+  static_dir: stylesheets
+
+- url: /test
+  script: test.php
+
+- url: /.*
+  script: index.php
